@@ -22,3 +22,13 @@ model Contact {
   body      String
   createdAt DateTime?
 }
+
+model User {
+  id                  Int       @id @default(autoincrement())
+  name                String?
+  email               String    @unique
+  hashedPassword      String
+  salt                String
+  resetToken          String?
+  resetTokenExpiresAt DateTime?
+}
