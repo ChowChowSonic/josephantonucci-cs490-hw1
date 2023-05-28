@@ -57,7 +57,7 @@ const SignupPage = () => {
             <header className="rw-segment-header">
               <h2 className="rw-heading rw-heading-secondary">Signup</h2>
             </header>
-
+            Joseph Antonucci - CS 490
             <div className="rw-segment-main">
               <div className="rw-form-wrapper">
                 <Form onSubmit={onSubmit} className="rw-form-wrapper">

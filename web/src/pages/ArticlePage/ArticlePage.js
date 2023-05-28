@@ -8,7 +8,7 @@ const ArticlePage = ({ id }) => {
     <>
       <MetaTags title="Article" description="Article page" />
 
-      <h1>ArticlePage {id}</h1>
+      <h1>ArticlePage {id} - Coded by Joseph Antonucci</h1>
       <p>
         Find me in <code>./web/src/pages/ArticlePage/ArticlePage.js</code>
       </p>
