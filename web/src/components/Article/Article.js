@@ -1,5 +1,9 @@
 import { Link, routes } from '@redwoodjs/router'
-const Article = ({ article }) => {
+const truncate = (text, length) => {
+  return text.substring(0, length) + '...'
+}
+
+const Article = ({ article, summary = false }) => {
   return (
     <article key={article.id}>
       <header>
@@ -7,7 +11,7 @@ const Article = ({ article }) => {
           <Link to={routes.article({ id: article.id })}>{article.title}</Link>
         </h2>
       </header>
-      <p>{article.body}</p>
+      <p> {summary ? truncate(article.body, 100) : article.body} </p>
       <div>posted at: {article.createdAt}</div>
     </article>
   )
