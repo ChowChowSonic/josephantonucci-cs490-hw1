@@ -25,7 +25,7 @@ CREATE TABLE "new_Contact" (
     "title" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "body" TEXT NOT NULL,
-    "createdAt" DATETIME?
+    "createdAt" DATETIME
 );
 INSERT INTO "new_Contact" ("createdAt", "email", "id") SELECT "createdAt", "email", "id" FROM "Contact";
 DROP TABLE "Contact";

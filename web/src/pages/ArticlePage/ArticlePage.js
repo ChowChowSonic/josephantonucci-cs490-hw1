@@ -10,10 +10,6 @@ const ArticlePage = ({ id }) => {
 
       <h1>ArticlePage {id} - Coded by Joseph Antonucci</h1>
       <p>
-        Find me in <code>./web/src/pages/ArticlePage/ArticlePage.js</code>
-      </p>
-      <p>
-        My default route is named <code>article</code>, link to me with `
         <Link to={routes.article({ id: 1 })}>Article</Link>`
         <ArticleCell id={id} />
       </p>
