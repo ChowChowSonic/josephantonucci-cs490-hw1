@@ -6,6 +6,7 @@ export const QUERY = gql`
       id
       name
       body
+      postId
       createdAt
     }
   }
@@ -18,7 +19,7 @@ export const Empty = () => {
 }
 
 export const Failure = ({ error }) => (
-  <div style={{ color: 'red' }}>Error: {error.message}</div>
+  <div style={{ color: 'red' }}>Error: {error?.message}</div>
 )
 
 export const Success = ({ comments }) => {

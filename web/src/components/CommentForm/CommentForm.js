@@ -47,27 +47,24 @@ const CommentForm = ({ postId }) => {
           titleClassName="font-semibold"
           wrapperClassName="bg-red-100 text-red-900 text-sm p-3 rounded"
         />
-        <Label
-          name="name"
-          className="block text-xs font-semibold text-gray-500 uppercase"
-        >
+        <Label name="name" className="block text-sm text-gray-600 uppercase">
           Name
         </Label>
         <TextField
           name="name"
-          className="block w-full p-1 border rounded text-sm "
+          className="block w-full p-1 border rounded text-xs "
           validation={{ required: true }}
         />
 
         <Label
           name="body"
-          className="block mt-4 text-xs font-semibold text-gray-500 uppercase"
+          className="block mt-4 text-sm text-gray-600 uppercase"
         >
           Comment
         </Label>
         <TextAreaField
           name="body"
-          className="block w-full p-1 border rounded h-24 text-sm"
+          className="block w-full p-1 border rounded h-24 text-xs"
           validation={{ required: true }}
         />
 

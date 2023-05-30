@@ -25,6 +25,7 @@ export const generated = () => {
       },
     }
   })
+
   return <CommentForm />
 }
 

@@ -5,7 +5,7 @@ export const schema = gql`
     body: String!
     post: Post!
     postId: Int!
-    createdAt: DateTime
+    createdAt: DateTime!
   }
 
   type Query {
@@ -26,6 +26,6 @@ export const schema = gql`
 
   type Mutation {
     createComment(input: CreateCommentInput!): Comment! @skipAuth
-    deleteComment(id: Int!): Comment! @requireAuth
+    deleteComment(id: Int!): Comment! @requireAuth(roles: "moderator")
   }
 `
